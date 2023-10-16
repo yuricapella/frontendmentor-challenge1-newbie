@@ -15,251 +15,250 @@
 
 @media(max-width: 1440px) {
     body,.tabelas{
-        width: 1440px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 }
 
 @media(min-width: 375px) {
-    body,.tabelas{
-        width: 375px;
+    body{
+        font-size: 18px;
+        font-family: 'Hanken Grotesk', sans-serif;
+        font-weight: 500;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
+    
+    .tabelas{
+        width: 800px;
+        height: 525px;
+        border-radius: 2rem;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 40px 80px var(--cor-light-lavender);
+        color: var(--cor-light-lavender);
+    }
+    
+    .tabela-resultado{
+        width: 100%;
+        height: 100%;
+        border-radius: 2rem;
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .titulo-tabela-resultado{
+        position: relative;
+        top: 5%;
+        font-size: 23px;
+    }
+    
+    .resultado{
+        width: 45%;
+        height: 30%;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 50%;
+        background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+        display: flex;
+        justify-content:space-around;
+        flex-direction: column;
+        position: relative;
+        top: 5%;
+    }
+    
+    .resultado-fonte-numero{
+        color: var(--cor-branca);
+        position: relative;
+        top: 10%;
+    }
+    .resultado-fonte-numero-abaixo{
+        position: relative;
+        bottom: 10%;
+    }
+    
+    .resultado-Great{
+        color: var(--cor-branca);
+        position: relative;
+        font-size: 30px;
+    }
+    
+    .paragrafo-tabela-resultado{
+        position: relative;
+        bottom: 15%;
+        margin: 50px;
+        font-size: 18px;
+    }
+    
+    .tabela-resumo{
+        width: 100%;
+        height: 100%;
+        background-color: var(--cor-branca);
+        color: var(--cor-cinza-escuro-fraca);
+        border-radius: 2rem;
+        display: flex;
+        justify-content:space-around;
+        flex-direction: column;
+        font-weight: 700;
+        position: relative;
+        left: 30px;
+        margin-left: 0;
+        margin-right: 70px;
+        align-items: center;
+    }
+    
+    .sumario{
+        color: var(--cor-cinza-escuro);
+        display: flex;
+        justify-content:left;
+        position: relative;
+        justify-content: left;
+        right: 35%;
+        top: 3%;
+        font-size: 23px;
+    }
+    
+    .reaction{
+        background-color: hsl(0, 100%, 67%,0.1);
+        border-radius: 6px;
+        width: 90%;
+        height: 5%;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        padding: 11px;
+        position: relative;
+    }
+    
+    .reaction-esquerdo{
+        position: relative;
+        right: 15%;
+        display: flex;
+        justify-content: center;
+        gap: 20%;
+    }
+    .reaction-direito{
+        position: relative;
+        left: 20%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .memory{
+        background-color: hsl(39, 100%, 56%,0.1);
+        border-radius: 6px;
+        width: 90%;
+        height: 5%;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        padding: 11px;
+        position: relative;
+        bottom: 5%;
+    }
+    
+    .memory-esquerdo{
+        position: relative;
+        right: 15%;
+        display: flex;
+        justify-content: center;
+        gap: 20%;
+    }
+    .memory-direito{
+        position: relative;
+        left: 20%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .verbal{
+        background-color: hsl(166, 100%, 37%,0.1);
+        border-radius: 6px;
+        width: 90%;
+        height: 5%;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding: 11px;
+        position: relative;
+        bottom: 10%;
+    }
+    
+    .verbal-esquerdo{
+        position: relative;
+        right: 17%;
+        display: flex;
+        justify-content: center;
+        gap: 20%;
+    }
+    .verbal-direito{
+        position: relative;
+        left: 22.5%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .visual{
+        background-color: hsl(234, 85%, 45%,0.1);
+        border-radius: 6px;
+        width: 90%;
+        height: 5%;
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+        padding: 11px;
+        position: relative;
+        bottom: 15%;
+    }
+    
+    .visual-esquerdo{
+        position: relative;
+        right: 17%;
+        display: flex;
+        justify-content: center;
+        gap: 20%;
+    }
+    .visual-direito{
+        position: relative;
+        left: 22.5%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .continue{
+        background-color: hsl(224, 30%, 27%);
+        border-radius: 30px;
+        width: 90%;
+        height: 7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--cor-branca);
+        padding: 10px;
+        margin-left: 0px;
+        position: relative;
+        bottom: 11%;
+    }
+    
+    
+    .resumo-cor{
+        color: var(--cor-cinza-escuro);
+        position: relative;
+        right: 10%;
+    }
+    
 }
 
-body{
-    max-width: 1440px;
-    min-width: 375px;
-    font-size: 18px;
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-weight: 500;
-    position: absolute;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-}
-
-.tabelas{
-    width: 750px;
-    height: 525px;
-    border-radius: 2rem;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 40px 80px var(--cor-light-lavender);
-    color: var(--cor-light-lavender);
-}
-
-.tabela-resultado{
-    width: 100%;
-    height: 100%;
-    border-radius: 2rem;
-    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-}
-
-.titulo-tabela-resultado{
-    position: relative;
-    top: 5%;
-    font-size: 20px;
-}
-
-.resultado{
-    width: 45%;
-    height: 30%;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 50%;
-    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
-    display: flex;
-    justify-content:space-around;
-    flex-direction: column;
-    position: relative;
-    top: 5%;
-}
-
-.resultado-fonte-numero{
-    color: var(--cor-branca);
-    position: relative;
-    top: 10%;
-}
-.resultado-fonte-numero-abaixo{
-    position: relative;
-    bottom: 10%;
-}
-
-.resultado-Great{
-    color: var(--cor-branca);
-    position: relative;
-    font-size: 30px;
-}
-
-.paragrafo-tabela-resultado{
-    position: relative;
-    bottom: 15%;
-    margin: 50px;
-    font-size: 17px;
-}
-
-.tabela-resumo{
-    width: 100%;
-    height: 100%;
-    background-color: var(--cor-branca);
-    color: var(--cor-cinza-escuro-fraca);
-    border-radius: 2rem;
-    display: flex;
-    justify-content:space-around;
-    flex-direction: column;
-    font-weight: 700;
-    position: relative;
-    left: 30px;
-    margin-left: 0;
-    margin-right: 70px;
-    align-items: center;
-}
-
-.sumario{
-    color: var(--cor-cinza-escuro);
-    display: flex;
-    justify-content:left;
-    position: relative;
-    justify-content: left;
-    right: 35%;
-    top: 3%;
-}
-
-.reaction{
-    background-color: hsl(0, 100%, 67%,0.1);
-    border-radius: 6px;
-    width: 90%;
-    height: 5%;
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    padding: 11px;
-    position: relative;
-}
-
-.reaction-esquerdo{
-    position: relative;
-    right: 15%;
-    display: flex;
-    justify-content: center;
-    gap: 20%;
-}
-.reaction-direito{
-    position: relative;
-    left: 20%;
-    display: flex;
-    justify-content: center;
-}
-
-.memory{
-    background-color: hsl(39, 100%, 56%,0.1);
-    border-radius: 6px;
-    width: 90%;
-    height: 5%;
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    padding: 11px;
-    position: relative;
-    bottom: 5%;
-}
-
-.memory-esquerdo{
-    position: relative;
-    right: 15%;
-    display: flex;
-    justify-content: center;
-    gap: 20%;
-}
-.memory-direito{
-    position: relative;
-    left: 20%;
-    display: flex;
-    justify-content: center;
-}
-
-.verbal{
-    background-color: hsl(166, 100%, 37%,0.1);
-    border-radius: 6px;
-    width: 90%;
-    height: 5%;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding: 11px;
-    position: relative;
-    bottom: 10%;
-}
-
-.verbal-esquerdo{
-    position: relative;
-    right: 17%;
-    display: flex;
-    justify-content: center;
-    gap: 20%;
-}
-.verbal-direito{
-    position: relative;
-    left: 22.5%;
-    display: flex;
-    justify-content: center;
-}
-
-.visual{
-    background-color: hsl(234, 85%, 45%,0.1);
-    border-radius: 6px;
-    width: 90%;
-    height: 5%;
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    padding: 11px;
-    position: relative;
-    bottom: 15%;
-}
-
-.visual-esquerdo{
-    position: relative;
-    right: 17%;
-    display: flex;
-    justify-content: center;
-    gap: 20%;
-}
-.visual-direito{
-    position: relative;
-    left: 22.5%;
-    display: flex;
-    justify-content: center;
-}
-
-.continue{
-    background-color: hsl(224, 30%, 27%);
-    border-radius: 30px;
-    width: 90%;
-    height: 7%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--cor-branca);
-    padding: 10px;
-    margin-left: 0px;
-    position: relative;
-    bottom: 11%;
-}
-
-
-.resumo-cor{
-    color: var(--cor-cinza-escuro);
-    position: relative;
-    right: 10%;
-}
 
 .attribution{
     display: none;
