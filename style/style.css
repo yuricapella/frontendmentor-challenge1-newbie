@@ -14,24 +14,12 @@
 }
 
 
-@media(max-width: 375px){
-    body,.tabelas{
-        width: max-content;
-        height: 200px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        flex-direction: column;
-        position:relative
-    }
-    .tabela-resultado{
-        width:fit-content;
-    }
-}
+
+/*  PC   1440PX*/
 
 body{
-    font-size: 18px;
+    max-width: 1440px;
+    font-size: 1.1rem;
     font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 500;
     position: absolute;
@@ -41,14 +29,14 @@ body{
 }
 
 .tabelas{
-    width: 740px;
-    height: 505px;
+    width: 46.2rem;
+    height: 31.5rem;
     border-radius: 2rem;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 40px 80px var(--cor-light-lavender);
+    box-shadow: 0 2.5rem 5rem var(--cor-light-lavender);
     color: var(--cor-light-lavender);
 }
 
@@ -68,18 +56,17 @@ body{
 .titulo-tabela-resultado{
     position: relative;
     top: 5%;
-    font-size: 23px;
+    font-size: 1.4rem;
 }
 
 .resultado{
     width: 45%;
     height: 30%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
     margin: 1rem;
     padding: 1rem;
     border-radius: 50%;
-    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
     display: flex;
-    justify-content:space-around;
     flex-direction: column;
     position: relative;
     top: 5%;
@@ -89,23 +76,23 @@ body{
     color: var(--cor-branca);
     position: relative;
     top: 10%;
+    font-size: 4.3rem;
 }
 .resultado-fonte-numero-abaixo{
     position: relative;
-    bottom: 15%;
 }
 
 .resultado-Great{
     color: var(--cor-branca);
     position: relative;
-    font-size: 30px;
+    font-size: 1.8rem;
     top: 10%;
 }
 
 .paragrafo-tabela-resultado{
     position: relative;
-    margin: 50px;
-    font-size: 20px;
+    margin: 3.1rem;
+    font-size: 1.1rem;
     bottom: 5%;
 }
 
@@ -120,9 +107,9 @@ body{
     flex-direction: column;
     font-weight: 700;
     position: relative;
-    left: 30px;
+    left: 1.8rem;
     margin-left: 0;
-    margin-right: 70px;
+    margin-right: 4.3rem;
     align-items: center;
     top: 4%;
 }
@@ -135,7 +122,7 @@ body{
     justify-content: left;
     right: 35%;
     bottom: 6%;
-    font-size: 23px;
+    font-size: 1.4rem;
 }
 
 .reaction{
@@ -144,7 +131,7 @@ body{
     width: 90%;
     height: 5%;
     display: flex;
-    gap: 15px;
+    gap: 1rem;
     justify-content: center;
     padding: 11px;
     position: relative;
@@ -171,7 +158,7 @@ body{
     width: 90%;
     height: 5%;
     display: flex;
-    gap: 15px;
+    gap: 1rem;
     justify-content: center;
     padding: 11px;
     position: relative;
@@ -199,7 +186,7 @@ body{
     height: 5%;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 1rem;
     padding: 11px;
     position: relative;
     bottom: 12%;
@@ -225,7 +212,7 @@ body{
     width: 90%;
     height: 5%;
     display: flex;
-    gap: 15px;
+    gap: 1rem;
     justify-content: center;
     padding: 11px;
     position: relative;
@@ -248,7 +235,7 @@ body{
 
 .continue{
     background-color: hsl(224, 30%, 27%);
-    border-radius: 30px;
+    border-radius: 1.8rem;
     width: 90%;
     height: 7%;
     display: flex;
@@ -256,7 +243,6 @@ body{
     align-items: center;
     color: var(--cor-branca);
     padding: 10px;
-    margin-left: 0px;
     position: relative;
     bottom: 11%;
 }
@@ -270,4 +256,91 @@ body{
 
 .attribution{
     display: none;
+}
+
+@media(max-width: 375px){
+
+    body{
+        padding: 10% ;
+        justify-content: center;
+        font-size: 13px;
+    }
+    .tabelas{
+        width: 375px;
+        height: 100%;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        position: relative;
+        bottom: 80px;
+    }
+    .tabela-resultado{
+        justify-content: center;
+        width: 100%;
+        height: 375px
+    }
+    .tabela-resumo{
+        width: 100%;
+        height: 500px;
+    }
+    .titulo-tabela-resultado{
+        font-size: 18px;
+        top: 50px;
+    }
+
+    .resultado{
+        border-radius: 50%;
+        width: 110px;
+        height: 100px;
+        top: 60px;
+    }
+    .resultado-fonte-numero{
+        font-size: 50px;
+    }
+    .resultado-fonte-numero-abaixo{
+        font-size: 15px;
+        top: 10px;
+    }
+    .resultado-Great{
+        font-size: 22px;
+        top: 60px;
+    }
+    .paragrafo-tabela-resultado{
+        font-size: 15px;
+        top: 20px;
+    }
+    .sumario{
+        right: 113px;
+        top: 1%;
+        font-size: 18px;
+    }
+    .reaction,.memory,.verbal,.visual{
+        width: 280px;
+        height: 35px;
+        font-size: 17px;
+        bottom: 3%;
+        left: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 20px;
+    }
+
+    .memory{
+        bottom: 30px;
+    }
+    .verbal{
+        bottom: 45px;
+    }
+    .visual{
+        bottom: 60px;
+    }
+
+    .continue{
+        width: 280px;
+        font-size: 20px;
+        text-align: center;
+        bottom: 70px;
+        padding-right: 18px;
+    }
 }
