@@ -258,16 +258,14 @@ body{
     display: none;
 }
 
-@media(max-width: 375px){
-
+@media(max-width: 390px){
     body{
-        padding: 10% ;
         justify-content: center;
         font-size: 13px;
     }
     .tabelas{
-        width: 375px;
-        height: 100%;
+        width: 100%;
+        height: 900px;
         flex-direction: column;
         display: flex;
         align-items: center;
@@ -277,22 +275,26 @@ body{
     .tabela-resultado{
         justify-content: center;
         width: 100%;
-        height: 375px
+        height: 100%;
+        position: relative;
+        top: 12%;
     }
     .tabela-resumo{
         width: 100%;
-        height: 500px;
+        height: 100%;
+        position: relative;
+        top: 12%;
     }
     .titulo-tabela-resultado{
         font-size: 18px;
-        top: 50px;
+        top: 70px;
     }
 
     .resultado{
         border-radius: 50%;
         width: 110px;
-        height: 100px;
-        top: 60px;
+        height: 105px;
+        top: 75px;
     }
     .resultado-fonte-numero{
         font-size: 50px;
@@ -302,45 +304,49 @@ body{
         top: 10px;
     }
     .resultado-Great{
-        font-size: 22px;
-        top: 60px;
+        font-size: 25px;
+        font-weight: 500;
+        top: 80px;
     }
     .paragrafo-tabela-resultado{
-        font-size: 15px;
-        top: 20px;
+        font-size: 17px;
+        top: 40px;
     }
     .sumario{
-        right: 113px;
-        top: 1%;
-        font-size: 18px;
+        right: 108px;
+        top: 5px;
+        font-size: 19px;
     }
     .reaction,.memory,.verbal,.visual{
         width: 280px;
         height: 35px;
-        font-size: 17px;
-        bottom: 3%;
+        font-size: 16px;
         left: 4px;
         display: flex;
         justify-content: center;
         align-items: center;
         padding-right: 20px;
+        gap: 25px;
     }
-
+    .reaction{
+        bottom: 5px;
+    }
     .memory{
-        bottom: 30px;
+        bottom: 10px;
     }
     .verbal{
-        bottom: 45px;
+        bottom: 15px;
     }
     .visual{
-        bottom: 60px;
+        bottom: 20px;
     }
 
     .continue{
         width: 280px;
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
-        bottom: 70px;
+        bottom: 15px;
         padding-right: 18px;
+        height: 40px;
     }
 }
